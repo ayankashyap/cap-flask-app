@@ -7,20 +7,16 @@ ensure docker is installed
 ```console
 user@system: git clone https://github.com/ayankashyap/cap-flask-app.git
 ```
-2. Cd into ./app 
-```console
-user@system: cd cap-flask-app/app
-```
 
-3. Build docker image
+2. Build docker image
 ```console
 user@system: docker build -t flask-docker:latest .
 ```
 
-4. Run 
+3. Run 
 ```console
-user@system: docker docker run --name flask-docker -p 5001:5001 flask-docker.
+user@system: docker run --name flask-docker -p 5001:5001 flask-docker
 ```
 
-5. The webapp should now be running on http://0.0.0.0:5001/
+4. The webapp should now be running on http://0.0.0.0:5001/
 
